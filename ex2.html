@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformação de Celsius em Fahrenheit</title>
+</head>
+<body>
+    <label for="celsius">Informe a temperatura em graus Celsius</label>
+    <input type="number" placeholder="Informe a primeira nota" id="celsius" name="celsius" required>
+    <br><br>
+
+    <button onclick="transf()">Transformar</button>
+
+    <script>
+
+        function transf(){
+
+            var celsius = document.getElementById('celsius').value 
+
+            fahr = (celsius * 1.8) + 32
+
+            alert(`A temperatura em Fahrenheit é igual a ${fahr}° F`)
+        }
+    </script>
+</body>
+</html>
